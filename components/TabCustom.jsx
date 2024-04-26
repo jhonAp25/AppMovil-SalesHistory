@@ -7,7 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default  function TabCustom({ state, descriptors, navigation }) {
     return (
-        <View style={{ flexDirection: 'row' , position: "relative" , backgroundColor: "#050F16"}}>
+        <View style={{ flexDirection: 'row' ,justifyContent: "space-between" , position: "relative" , backgroundColor: "#050F16" , height: 100 , paddingRight: 40 , paddingLeft: 40 }}>
           {state.routes.map((route, index) => {
             const { options } = descriptors[route.key];
             const label =
@@ -38,7 +38,8 @@ export default  function TabCustom({ state, descriptors, navigation }) {
               });
             };
 
-            if(label==='Sale'){
+       
+             if(label==='Sale'){
                 return(
                   <TouchableOpacity
                   key={index}
@@ -48,7 +49,7 @@ export default  function TabCustom({ state, descriptors, navigation }) {
                     testID={options.tabBarTestID}
                     onPress ={onPress}
                     onLongPress={onLongPress}
-                    style={{ flex: 3 , justifyContent: "center", alignItems: "center" }}>
+                    style={{ justifyContent: "center", alignItems: "center" }}>
                     <View 
                         style={{position : "relative" , top : -40 ,  backgroundColor :"#FF4C29" , width : 70 , height : 70 , borderRadius:35 , borderWidth: 6, borderColor: "#10212D"  , justifyContent: "center" , alignItems : "center"}} >
                       <Ionicons  name="add" color='#F3F2C9' size={30} />
@@ -56,7 +57,7 @@ export default  function TabCustom({ state, descriptors, navigation }) {
                   </TouchableOpacity>
                 )
                 
-              }
+              } 
     
             return (
               <TouchableOpacity
@@ -67,14 +68,16 @@ export default  function TabCustom({ state, descriptors, navigation }) {
                 testID={options.tabBarTestID}
                 onPress={onPress}
                 onLongPress={onLongPress}
-                style={{ flex: 2 , justifyContent: "center", alignItems: "center" }}
+                style={{  justifyContent: "center", alignItems: "center" }}
               >
-                <View style={{flexDirection: "row-reverse" , padding: 13, borderRadius: 10 , backgroundColor :"#081620" , alignItems:"center" }}>
-                    {isFocused ? <Text style={{ color: '#F3F2C9' }} >  {label} </Text>: null}
-                    <Ionicons  name="finger-print" color='#F3F2C9' size={30} />
+                <View style={{flexDirection: "row-reverse" , padding: 10, borderRadius: 10 , backgroundColor :"#081620" , alignItems:"center" , justifyContent: "center" }}>
+                    {isFocused ? <Text style={{ color: '#F3F2C9' , fontSize: 14 }}  >  {label} </Text>: null}
+                    <Ionicons  name={ label === "Home" ? "finger-print-outline" : label === "Gastos" ? "cash-outline" : "person-outline"  } color='#F3F2C9' size={30} />
                 </View>
               </TouchableOpacity>
             );
+
+           
           })}
         </View>
       );
