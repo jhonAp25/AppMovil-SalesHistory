@@ -7,13 +7,16 @@ import TabCustom from './components/TabCustom';
 import CostsPage from './views/CostsPage';
 import ProfilePage from './views/ProfilePage';
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
 
   const Tab = createBottomTabNavigator();
 
   return (
-    <NavigationContainer>
+    <>
+    <StatusBar style='light'   />
+    <NavigationContainer >
       <Tab.Navigator   tabBar={props => <TabCustom {...props} />} >
         <Tab.Screen name="Home" component={HomePage}  options={{header: ()=> null}}   />
         <Tab.Screen name="Gastos"  component={CostsPage} options={{header: ()=> null}}    />
@@ -23,6 +26,7 @@ export default function App() {
                                                                 }}   />
       </Tab.Navigator>
     </NavigationContainer>
+    </>
   );
 }
 
