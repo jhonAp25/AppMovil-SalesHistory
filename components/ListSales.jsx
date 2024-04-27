@@ -19,7 +19,7 @@ const ListSales =({navigation})=>{
 
     return (
         <>
-        <Text style={{color: '#879096' , fontSize: 20, fontFamily : 'Roboto_400Regular', marginTop: 15 }}>Listado de Ventas </Text>  
+        <Text style={{color: '#879096' , fontSize: 18, fontFamily : 'Roboto_400Regular', marginTop: 20 }}>Listado de Ventas </Text>  
         <ScrollView style={style.content} refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }  >
@@ -37,131 +37,6 @@ const ListSales =({navigation})=>{
                 <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
             </TouchableOpacity>
 
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={style.item} onPress={()=>navigation.push('detalleVenta')} >
-                <Text style={{fontSize: 15, flex: 1, color: '#fff',}} >1</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15 ,color: '#F3F2C9' , fontWeight: '400' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2,fontFamily : 'Roboto_100Thin'}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' , flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold'}}>S/. 45</Text>
-            </TouchableOpacity>
-
-        
-            <TouchableOpacity style={style.item} >
-                <Text style={{fontSize: 15, flex: 1,color: '#fff',}} >2</Text>
-                <Text style={{fontSize: 15,color: '#fff' , flex: 2, fontFamily : 'Roboto_100Thin',}}>Nueva Venta</Text>
-                <Text style={{fontSize: 15,color: '#F3F2C9' ,  flex: 3, textAlign :'right', fontFamily : 'Roboto_700Bold',}}>S/. 45</Text>
-            </TouchableOpacity>
         
         </ScrollView>
 

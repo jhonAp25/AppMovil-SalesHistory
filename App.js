@@ -8,6 +8,7 @@ import CostsPage from './views/CostsPage';
 import ProfilePage from './views/ProfilePage';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { StatusBar } from 'expo-status-bar';
+import HeaderCustom from './components/HeaderCustom';
 
 export default function App() {
 
@@ -19,10 +20,10 @@ export default function App() {
     <NavigationContainer >
       <Tab.Navigator   tabBar={props => <TabCustom {...props} />} >
         <Tab.Screen name="Home" component={HomePage}  options={{header: ()=> null}}   />
-        <Tab.Screen name="Gastos"  component={CostsPage} options={{header: ()=> null}}    />
-        <Tab.Screen name="Perfil"  component={ProfilePage} options={{header: ()=> <Header name='Perfil' />  }}   />
+        <Tab.Screen name="Gastos"  component={CostsPage}   options={{header: ()=> null}}   />
+        <Tab.Screen name="Perfil"  component={ProfilePage} options={{header: ()=> <HeaderCustom name='Perfil' />  }}   />
         <Tab.Screen name="Sale" component={SalePage} options={{
-                                                                header: ()=> <Header name='Nueva Venta'    />
+                                                                header: ()=> <HeaderCustom name='Nueva Venta'    />
                                                                 }}   />
       </Tab.Navigator>
     </NavigationContainer>

@@ -17,11 +17,9 @@ const HomePage = ({navigation}) => {
           <View style={style.title} >
             <Text style={{ fontSize : 20 ,fontWeight: "800", color: '#fff' , fontFamily: 'Roboto' }}> Ventas</Text>             
           </View>
-
-          <View style={style.resumen} >
-            <SummarySales/>
-          </View> 
-
+          
+          <SummarySales/>
+        
           <View style={{  }} >
             <ListSales navigation={navigation}/>
           </View>
@@ -49,17 +47,7 @@ const style = StyleSheet.create({
       backgroundColor: '#10212D',
       
    
-  },
-  resumen:{
-      flexDirection: 'row',
-      padding:  20,
-      backgroundColor: '#055052',
-      marginTop: 10,
-      borderRadius : 10
-      },
-
-
-  
+  },  
   title :{
       fontFamily: 'Roboto_400Regular',
       

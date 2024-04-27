@@ -2,12 +2,12 @@ import React from 'react'
 import { Text, View, Image ,StyleSheet} from 'react-native';
 
 
-const SummarySales =()=>{
+const SummaryCosts =()=>{
     return (
         <View style={style.resumen}>
             <View style={{flex : 3, alignItems: "flex-start"}}>
                 <View style={{flexDirection:"row" , alignItems: "baseline"}}  >
-                    <Text style={{color :'#9BB9BA', marginBottom: 10,fontFamily: 'Roboto_400Regular'}} >Total de Ventas </Text>
+                    <Text style={{color :'#9BB9BA', marginBottom: 10,fontFamily: 'Roboto_400Regular'}} >Total de Gastos </Text>
                     <View style={style.badge}>
                         <Text style={{color: "#9B9FA2"}}>17</Text> 
                     </View>
@@ -19,14 +19,14 @@ const SummarySales =()=>{
                     <Image  source={require('../assets/images/point-of-sale.png')}
                             resizeMode='contain'
                             style={{width: 35, height: 35 , tintColor: '#F3F2C9'}} />
-            </View> 
+            </View>
                 
         </View>
     )
 
 }
 
-export default SummarySales
+export default SummaryCosts
 
 
 const style = StyleSheet.create({
@@ -34,10 +34,11 @@ const style = StyleSheet.create({
     resumen:{
         flexDirection: 'row',
         padding:  20,
-        backgroundColor: '#055052',
+        backgroundColor: '#641A1E',
         marginTop: 10,
         borderRadius : 10
         },
+
     badge:{
         fontSize: 10,
         color:'#9B9FA2',

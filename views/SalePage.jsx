@@ -1,12 +1,23 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
+import TypeProduct from '../components/TypeProduct'
 
-const SalePage = () => {
+const SalePage = ({navigation}) => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>SALE!! !</Text>
+    <View style={style.content}>
+            
+            <TypeProduct navigation={navigation}  hola='hola' />
     </View>
   )
 }
 
 export default SalePage
+
+
+const style = StyleSheet.create({
+  content:{
+      backgroundColor: '#081620',
+      height: '100vh',
+      padding: 10
+  }
+})
