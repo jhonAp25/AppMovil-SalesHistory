@@ -17,7 +17,7 @@ export default SalePage
 const style = StyleSheet.create({
   content:{
       backgroundColor: '#081620',
-      height: '100vh',
-      padding: 10
+      flex: 1
+      
   }
 })
