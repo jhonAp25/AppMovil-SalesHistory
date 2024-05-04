@@ -1,8 +1,12 @@
 import { StyleSheet , FlatList, TouchableOpacity, View, Text, ScrollView, Pressable, Image } from 'react-native'
 import React ,{useEffect, useState,useContext} from 'react'
+import DetailsProduct from './DetailsProduct'
 
 
 const TypeProduct =({navigation})=>{
+
+  const [modalVisible, setModalVisible] = useState(false)
+    
 
 const DATA = [  {
     "id": 1,
@@ -108,6 +112,11 @@ const DATA_modelo = [
   ]
 
 
+  const handleSizeClick =()=>{
+    setModalVisible(!modalVisible)
+  }
+
+
     const renderItem = ({ item }) => (
         <Pressable onPress={() => handleSizeClick(1)} >
             <View   style={style.item}  >
@@ -145,6 +154,9 @@ const DATA_modelo = [
           
         </ScrollView>
 
+   {/********************** M O D A L ******************************** */}
+        
+   <DetailsProduct modelo={modeloProd} modalVisible={modalVisible} setModalVisible={setModalVisible} />   
 
        
         </>
