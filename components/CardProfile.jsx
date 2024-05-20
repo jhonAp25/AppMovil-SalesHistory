@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, View, Image ,StyleSheet , TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Colors from '../assets/config/Colors';
 
 
 
@@ -14,12 +15,12 @@ const CardProfile = () => {
         </View>
 
         <View style={style.usuario}>
-            <Text style={{color: '#F3F2C9', fontWeight: 'bold' , fontSize: 22 , fontFamily : 'Roboto',}} >Hola Jhon Apaza</Text>
-            <Text style={{color: '#fff' ,fontSize: 15, fontWeight:100 , fontFamily : 'Roboto', }} >Bienvenido de nuevo</Text>
+            <Text style={{color: Colors.text, fontWeight: 'bold' , fontSize: 22 , fontFamily : 'Roboto',}} >Hola Jhon Apaza</Text>
+            <Text style={{color: Colors.text_secundary ,fontSize: 15, fontWeight:100 , fontFamily : 'Roboto', }} >Bienvenido de nuevo</Text>
         </View>
 
         <View  style={style.icono}>
-            <Ionicons name='log-out-outline' color='#F3F2C9' size={30} />
+            <Ionicons name='log-out-outline' color={Colors.text} size={30} />
         </View>
 
     </View>

@@ -117,8 +117,8 @@ const DATA_modelo = [
   }
 
 
-    const renderItem = ({ item }) => (
-        <Pressable onPress={() => handleSizeClick(1)} >
+    const renderItem = ({ item }) => ( 
+        <Pressable onPress={() => handleSizeClick()} >
             <View   style={style.item}  >
                 <Image style={style.image} source = {{uri : item.imagenProducto}} alt='ropa-modelo'   />
                 <Text style={{color: '#F3F2C9', textTransform: 'capitalize', fontSize: 14 , }} > {item.nombre} </Text>
@@ -135,7 +135,7 @@ const DATA_modelo = [
         <ScrollView style={style.content} >
 
             {DATA.map(t=>(
-        
+             
                 <View  >
                 <Text style={{fontWeight: 'bold' , fontSize : 15 ,marginTop: 30 , color: '#838A8F', textTransform:'uppercase'}}> {t.nombre}</Text>
                         <FlatList
@@ -156,7 +156,7 @@ const DATA_modelo = [
 
    {/********************** M O D A L ******************************** */}
         
-   <DetailsProduct modelo={modeloProd} modalVisible={modalVisible} setModalVisible={setModalVisible} />   
+   <DetailsProduct modelo={DATA_modelo} modalVisible={modalVisible} setModalVisible={setModalVisible} />   
 
        
         </>

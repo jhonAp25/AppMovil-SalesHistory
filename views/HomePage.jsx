@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-nati
 import CardProfile from '../components/CardProfile'
 import SummarySales from '../components/SummarySales'
 import ListSales from '../components/ListSales'
+import Colors from '../assets/config/Colors'
 
 const HomePage = ({navigation}) => {
   return (
@@ -15,7 +16,7 @@ const HomePage = ({navigation}) => {
         <View style={{}}>
 
           <View style={style.title} >
-            <Text style={{ fontSize : 20 ,fontWeight: "800", color: '#fff' , fontFamily: 'Roboto' }}> Ventas</Text>             
+            <Text style={{ fontSize : 20 ,fontWeight: "800", color: Colors.text , fontFamily: 'Roboto' }}> Ventas</Text>             
           </View>
           
           <SummarySales/>
@@ -44,13 +45,12 @@ const style = StyleSheet.create({
       paddingTop:30,
       paddingLeft: 40,
       paddingRight:40,
-      backgroundColor: '#10212D',
+      backgroundColor: Colors.primary,
       
    
   },  
   title :{
-      fontFamily: 'Roboto_400Regular',
-      
+            
       display: 'flex',
       flexDirection : 'row',
       justifyContent : 'space-between'

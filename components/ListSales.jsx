@@ -2,6 +2,7 @@ import React from 'react'
 import { RefreshControl, ScrollView } from 'react-native';
 import { Text, View, Image ,StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native';
+import Colors from '../assets/config/Colors';
 
 
 const ListSales =({navigation})=>{
@@ -19,7 +20,7 @@ const ListSales =({navigation})=>{
 
     return (
         <>
-        <Text style={{color: '#879096' , fontSize: 18, fontFamily : 'Roboto_400Regular', marginTop: 20 }}>Listado de Ventas </Text>  
+        <Text style={{color: Colors.text , fontSize: 18, marginTop: 20 }}>Listado de Ventas </Text>  
         <ScrollView style={style.content} refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }  >

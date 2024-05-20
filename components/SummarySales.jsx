@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View, Image ,StyleSheet} from 'react-native';
+import Colors from '../assets/config/Colors';
 
 
 const SummarySales =()=>{
@@ -18,7 +19,7 @@ const SummarySales =()=>{
             <View style={{flex : 1, justifyContent:'center', alignItems: 'center'}}>
                     <Image  source={require('../assets/images/point-of-sale.png')}
                             resizeMode='contain'
-                            style={{width: 35, height: 35 , tintColor: '#F3F2C9'}} />
+                            style={{width: 35, height: 35 , tintColor: Colors.text_secundary}} />
             </View> 
                 
         </View>
